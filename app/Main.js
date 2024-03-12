@@ -10,11 +10,15 @@ import Terms from "./components/Terms"
 
 function Main() {
   return (
-    <>
+    <BrowserRouter>
       <Header />
-      <About />
+      <Routes>
+        <Route path="/" element={<HomeGuest />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/terms" element={<Terms />} />
+      </Routes>
       <Footer />
-    </>
+    </BrowserRouter>
   )
 }
 
