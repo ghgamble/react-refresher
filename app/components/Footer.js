@@ -17,11 +17,11 @@ function Footer() {
         </a>
       </p>
       <p className="m-0">
-        Copyright &copy; 2020{" "}
-        <a href="/" className="text-muted">
+        Copyright &copy; {new Date().getFullYear()}
+        <a href="/" className="text-muted px-2">
           ComplexApp
         </a>
-        . All rights reserved.
+        All rights reserved
       </p>
     </footer>
   )
